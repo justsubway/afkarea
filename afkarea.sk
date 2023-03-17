@@ -1,0 +1,9 @@
+every 1 hour:
+  loop all players:
+    if "%region at loop-players%" contains "AFKAREA":
+      chance of 10%:
+        make console execute command "/crates key give %loop-players% emerald_crate_key 1" 
+      chance of 20%:
+        make console execute command "/crates key give %loop-players% iron_key 1"
+      chance of 70%:
+        make console execute command "/crates key give %loop-players% bronzecratekey 1"
